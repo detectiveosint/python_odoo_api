@@ -1,0 +1,235 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 5.1.6.2 (Linux)"/>
+	<meta name="created" content="2018-07-28T13:37:00.100930884"/>
+	<meta name="changed" content="2018-07-28T13:40:30.721813401"/>
+	<style type="text/css">
+		@page { margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 120% }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<body lang="en-US" dir="ltr">
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">example
+1 &quot;get info&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">from
+myapi import OdooAPI</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">url,db,username,password=&quot;http://0.0.0.0:8069&quot;,&quot;test&quot;,&quot;admin&quot;,&quot;admin&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">api=OdooAPI(url,db,username,password)</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">print(api.getInfo())</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">=======================================================================</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">example
+2 &quot;create Record&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">from
+myapi import OdooAPI</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">url,db,username,password=&quot;http://0.0.0.0:8069&quot;,&quot;test&quot;,&quot;admin&quot;,&quot;admin&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">api=OdooAPI(url,db,username,password)</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">id=api.create('res.partner',{'name':
+&quot;New Partner&quot;})</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">=======================================================================</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">example
+3 &quot;delete Record&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">from
+myapi import OdooAPI</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">url,db,username,password=&quot;http://0.0.0.0:8069&quot;,&quot;test&quot;,&quot;admin&quot;,&quot;admin&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">api=OdooAPI(url,db,username,password)</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">api.delete('res.partner',[1,2])</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">=======================================================================</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">example
+4 &quot;get Records&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">from
+myapi import OdooAPI</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">url,db,username,password=&quot;http://0.0.0.0:8069&quot;,&quot;test&quot;,&quot;admin&quot;,&quot;admin&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">api=OdooAPI(url,db,username,password)</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">print(api.get('res.partner',[1,2]))</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">=======================================================================</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">example
+5 &quot;update Records&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">from
+myapi import OdooAPI</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">url,db,username,password=&quot;http://0.0.0.0:8069&quot;,&quot;test&quot;,&quot;admin&quot;,&quot;admin&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">api=OdooAPI(url,db,username,password)</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">api.update('res.partner',[1,2],{'name':
+&quot;New Partner&quot;})</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">=======================================================================</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">example
+6 &quot;read Records&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">from
+myapi import OdooAPI</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">url,db,username,password=&quot;http://0.0.0.0:8069&quot;,&quot;test&quot;,&quot;admin&quot;,&quot;admin&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">api=OdooAPI(url,db,username,password)</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">print(api.read('res.partner',[1,2],['name','country_id']))</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">=======================================================================</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">example
+7 &quot;get fields for model&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">from
+myapi import OdooAPI</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">url,db,username,password=&quot;http://0.0.0.0:8069&quot;,&quot;test&quot;,&quot;admin&quot;,&quot;admin&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">api=OdooAPI(url,db,username,password)</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">print(api.getFields('res.partner',['string','help','type']))</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">=======================================================================</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">example
+7 &quot; search &quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">from
+myapi import OdooAPI</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">url,db,username,password=&quot;http://0.0.0.0:8069&quot;,&quot;test&quot;,&quot;admin&quot;,&quot;admin&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">api=OdooAPI(url,db,username,password)</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">print(api.search('res.partner',[['is_company',
+'=', True], ['customer', '=', True]]))</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">=======================================================================</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">example
+8 &quot;search and count &quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">from
+myapi import OdooAPI</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">url,db,username,password=&quot;http://0.0.0.0:8069&quot;,&quot;test&quot;,&quot;admin&quot;,&quot;admin&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">api=OdooAPI(url,db,username,password)</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">print(api.search_count('res.partner',[['is_company',
+'=', True], ['customer', '=', True]]))</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">=======================================================================</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">example
+9 &quot;search &amp; limit rcordse&quot; offset default=0,limit
+default=1&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">from
+myapi import OdooAPI</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">url,db,username,password=&quot;http://0.0.0.0:8069&quot;,&quot;test&quot;,&quot;admin&quot;,&quot;admin&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">api=OdooAPI(url,db,username,password)</p>
+<p align="justify" style="margin-bottom: 0in; border-top: none; border-bottom: 1.00pt double #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.03in; padding-left: 0in; padding-right: 0in; line-height: 100%">
+print(api.search_limit('res.partner',[['is_company', '=', True],
+['customer', '=', True]],0,2))</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">example
+10 &quot;search and read &quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">from
+myapi import OdooAPI</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">url,db,username,password=&quot;http://0.0.0.0:8069&quot;,&quot;test&quot;,&quot;admin&quot;,&quot;admin&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">api=OdooAPI(url,db,username,password)</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">print(api.search_read('res.partner',[['is_company',
+'=', True], ['customer', '=', True]],['name','country_id']))</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">=======================================================================</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">example
+11 &quot;search &amp; raed&amp; limit  limit default=1,offset
+default=0&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">from
+myapi import OdooAPI</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">url,db,username,password=&quot;http://0.0.0.0:8069&quot;,&quot;test&quot;,&quot;admin&quot;,&quot;admin&quot;</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">api=OdooAPI(url,db,username,password)</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">print(api.search_read_limit('res.partner',[['is_company',
+'=', True], ['customer', '=', True]],['name','country_id']))</p>
+</body>
+</html>
